@@ -1,4 +1,5 @@
-== Resque Mailer Test Project
+Resque Mailer Test Project
+==========================
 
 This sample Rails project illustrates usage of Resque::Mailer.
 It's also used for sanity checking when reporting or investigating
