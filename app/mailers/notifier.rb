@@ -1,5 +1,4 @@
-class Notifier < ActionMailer::Base
-  include Resque::Mailer
+class Notifier < AsyncMailer
   default :from => "from@example.com"
 
   def test
