@@ -1,8 +1,7 @@
-== Resque Mailer Test Project
+Resque Mailer Test Project
+==========================
 
-This sample Rails project illustrates usage of Resque::Mailer.
-It's also used for sanity checking when reporting or investigating
-an error condition.
+This sample Rails project illustrates usage of Resque::Mailer. It's also used for sanity checking when reporting or investigating an error condition.
 
 0. Edit app/mailers/notifier.rb to set your local address for testing
 1. Make sure Redis is running
@@ -11,8 +10,6 @@ an error condition.
 
     Notifier.test.deliver
 
-4. Start a Resque worker
+Next, start a Resque worker and tail the development log to see the delivery happen:
 
     QUEUE=* rake environment resque:work
-
-6. Tail the log file to see the delivery happen
